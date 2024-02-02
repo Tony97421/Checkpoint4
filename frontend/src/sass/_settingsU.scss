@@ -1,0 +1,41 @@
+.containerSettings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .containerInputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+    .input {
+      display: flex;
+      border: 1px solid black;
+      width: 30vw;
+      height: 5vh;
+      border-radius: 10px;
+      color: #001f3fcf;
+      padding-inline-start: 5px;
+    }
+    .buttonValider {
+      width: 15vw;
+      height: 5vh;
+      color: #001f3fcf;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .buttonDelete {
+      border: none;
+      background: transparent;
+      width: 15vw;
+      border-radius: 5px;
+      height: 7vh;
+      cursor: pointer;
+      &:hover {
+        color: rgba(86, 13, 13, 0.959);
+        border: 1px solid rgba(116, 50, 15, 0.959);
+      }
+    }
+  }
+}

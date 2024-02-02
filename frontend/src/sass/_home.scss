@@ -1,0 +1,89 @@
+.containerHome {
+  display: flex;
+  flex-direction: column;
+  .forumMoto {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #f1f1f1;
+    position: relative;
+    border: 2px solid #f1f1f1;
+    width: 20%;
+    border-radius: 5px;
+    margin: 0 auto;
+    &:hover {
+      background-color: #f1f1f1;
+      color: #001f3fcf;
+      transition: 0.5s;
+    }
+  }
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .bonjour {
+      font-size: 1.5rem;
+      padding: 10px;
+      margin-right: 25px;
+    }
+    .settings {
+      width: 2.5vw;
+      margin-right: 25px;
+      cursor: pointer;
+      animation: bounce 1s infinite;
+    }
+    .buttonSettings {
+      border: none;
+      background: transparent;
+    }
+    .popUp {
+      position: fixed;
+      top: 140px;
+      left: 92%;
+      transform: translateX(-50%);
+      width: 200px;
+      height: 100px;
+      background-color: rgba(67, 15, 15, 0.566);
+      border: 1px solid black;
+      padding: 10px;
+      border-radius: 10px;
+      z-index: 1;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+      .popUp h2 {
+        cursor: pointer;
+        display: flex;
+      }
+      .deco {
+        cursor: pointer;
+        border: none;
+        background: transparent;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .conatinerTopic {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 10px;
+    margin-top: 10%;
+    .topic {
+      font-size: 1.3rem;
+      border-bottom: 1px solid #f1f1f1;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: translateY(-0.2cm);
+      }
+    }
+  }
+}

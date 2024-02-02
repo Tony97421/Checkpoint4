@@ -1,0 +1,53 @@
+.containerCreateTopic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70vh;
+  align-items: center;
+
+  .containerInputs {
+    width: 30%;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #001f3fcf;
+  }
+
+  .input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    color: #001f3fcf;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+  }
+
+  .option {
+    width: 15vw;
+    height: 25vh;
+    color: #001f3fcf;
+  }
+  .postButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #001f3fcf;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}

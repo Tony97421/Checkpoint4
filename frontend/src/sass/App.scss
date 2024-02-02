@@ -1,0 +1,19 @@
+.containerApp {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  .forummoto {
+    font-size: 2rem;
+    position: absolute;
+    color: #620f0f;
+    font-family: "Italiana", sans-serif;
+  }
+  .moto {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+  }
+}
